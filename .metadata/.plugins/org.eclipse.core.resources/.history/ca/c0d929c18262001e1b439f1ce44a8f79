@@ -1,0 +1,16 @@
+package com.optionals;
+
+import java.util.Optional;
+
+public class OptionalsExamples {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	static void optionalWithString() {
+		Optional<String> optString = Optional.ofNullable(null);
+		optString.ofNullable(null)
+	}
+
+}

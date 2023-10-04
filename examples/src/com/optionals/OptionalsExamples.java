@@ -1,0 +1,23 @@
+package com.optionals;
+
+import java.util.Optional;
+
+public class OptionalsExamples {
+	
+	public static void main(String[] args) {
+		optionalWithString();
+	}
+	
+	static void optionalWithString() {
+		String str = "shivan";
+//		String str = null;
+		Optional<String> optString = Optional.ofNullable(str);
+		// orElse
+		String output = optString.orElse("String is null");
+		System.out.println(output);
+		// orElseThrow
+		String orElseThrow = optString.orElseThrow(()-> new RuntimeException("String is null"));
+		System.out.println(orElseThrow);
+	}
+
+}
